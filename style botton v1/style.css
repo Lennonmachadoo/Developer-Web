@@ -1,0 +1,162 @@
+/* ==============================
+   RESET BÁSICO
+================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* ==============================
+   CONTAINER DOS CARDS
+================================= */
+.container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==============================
+   CARD OFERTA
+================================= */
+.card-oferta {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-oferta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ==============================
+   IMAGEM DO PRODUTO
+================================= */
+.imagem-produto img {
+  width: 160px;
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+/* ==============================
+   TÍTULO
+================================= */
+.titulo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* ==============================
+   PREÇOS
+================================= */
+.preco-antigo {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.preco-parcelado {
+  font-size: 42px;
+  font-weight: bold;
+  color: #28a745; /* verde destaque */
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.preco-parcelado span {
+  font-size: 56px;
+}
+
+.preco-vista {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* ==============================
+   FAIXA VERMELHA
+================================= */
+.faixa-vermelha {
+  background: #d32f2f;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px;
+  margin: 15px 0;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+/* ==============================
+   BOTÃO CTA
+================================= */
+.btn-comprar {
+  display: inline-block;
+  background: #ff9800;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-comprar:hover {
+  background: #e68900;
+}
+
+/* ==============================
+   FRETE GRÁTIS
+================================= */
+.frete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.frete img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+/* ==============================
+   RESPONSIVIDADE
+================================= */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 16px;
+  }
+  .preco-parcelado {
+    font-size: 32px;
+  }
+  .preco-parcelado span {
+    font-size: 44px;
+  }
+  .btn-comprar {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+

@@ -1,0 +1,1 @@
+Este é um código em CSS, com configurações totalmente personalizável para um botão de COMPRAR AGORA para sites.
